@@ -30,6 +30,8 @@ setup(name='jedi',
       packages=packages,
       package_data={'jedi': ['evaluate/compiled/fake/*.pym', 'parser/grammar*.txt']},
       platforms=['any'],
+      setup_requires=['pytest-runner'],
+      tests_require=['pytest', 'docopt'],
       classifiers=[
           'Development Status :: 4 - Beta',
           'Environment :: Plugins',
